@@ -79,6 +79,10 @@ color: var(--dark-cyan);
     color: var(--very-dark-cyan);
 
 }
+#items{
+    max-width: 90vw;
+    margin:auto;
+}
 
 
 @media  (min-width:900px) {
@@ -97,10 +101,13 @@ color: var(--dark-cyan);
     }
     
     #orange {
-        border-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
     }
     #dark-cyan{
-        border-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 8px ;
+        
     }
     
     .heading{
@@ -143,13 +150,9 @@ color: var(--dark-cyan);
 }
 @media (max-width: 900px ){
     #items{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-height: 80vh;
-        width: auto;
-        padding: 0;
+        
+        display:block;
+        padding: 0.3rem;
     }
     .column{
         margin: auto;
